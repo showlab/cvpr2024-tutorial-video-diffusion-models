@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="keywords"
+    content="cvpr, tutorial, cvpr-2024, cvpr2024, computer vision, machine learning, generative learning, diffusion, denoising, denoising diffusion, video generative models, video generation, video editing">
+
+  <link rel="shortcut icon" href="./img/CVPR-logo.svg">
+
+
+
+  <title>CVPR 2024 Tutorial on Diffusion-based Video Generative Models</title>
+  <meta name="description" content="CVPR 2024 Tutorial on Diffusion-based Video Generative Models ---">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="CVPR 2024 Tutorial on Diffusion-based Video Generative Models" />
+  <meta property="og:url" content="https://showlab.github.io/cvpr2024-tutorial-video-diffusion-models" />
+  <meta property="og:description" content="CVPR 2024 Tutorial on Diffusion-based Video Generative Models" />
+  <meta property="og:site_name" content="CVPR 2024 Tutorial on Diffusion-based Video Generative Models" />
+  <meta property="og:image"
+    content="https://showlab.github.io/cvpr2024-tutorial-video-diffusion-models/img/cvpr2024.jpg" />
+  <meta property="og:image:url"
+    content="https://showlab.github.io/cvpr2024-tutorial-video-diffusion-models/img/cvpr2024.jpg" />
+
+  <!--Twitter Card Stuff-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@jayzhangjiewu">
+  <meta name="twitter:title" content="CVPR 2024 Tutorial on Diffusion-based Video Generative Models" />
+  <meta name="twitter:image"
+    content="https://showlab.github.io/cvpr2024-tutorial-video-diffusion-models/img/cvpr2024.jpg">
+  <meta name="twitter:url" content="https://showlab.github.io/cvpr2024-tutorial-video-diffusion-models" />
+  <meta name="twitter:description" content="CVPR 2024 Tutorial on Diffusion-based Video Generative Models" />
+
+  <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css?1" media="screen,projection">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ff6e9b10da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- <div class="top-strip"></div> -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"></a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#organizers">About Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="page-content">
+      <p><br /></p>
+      <div class="row">
+        <div class="col-xs-12">
+          <center>
+            <h2><b>CVPR 2024 Tutorial:</b></h2>
+          </center><br>
+          <center>
+            <h1>Diffusion-based Video Generative Models</h1>
+          </center>
+          <center><b>Dates</b>: TBD. <br />
+            <b>Location</b>: TBD. <br />
+          </center>
+
+        </div>
+      </div>
+
+      <center>
+        <br>
+        <a>
+          <img width="300px" src="./img/cvpr2024.jpg" />
+        </a>
+        <br>
+      </center>
+
+      <br>
+      <h4 style="color:darkred;text-align:center">
+        <b>
+          Links to previous tutorial:
+          <a
+            href="https://www.dropbox.com/scl/fi/u7jgodz3tz01bzd5uftog/Video-Diffusion-Tutorial-Prof-Mike-Shou-NUS-2023-Dec-15.pdf?rlkey=de6axl9dnjhz1ub0wmpwmpq4f&dl=0">[Slides]</a>
+          <a href="https://github.com/showlab/Awesome-Video-Diffusion">[Paper List]</a>
+          <a href="https://www.youtube.com/watch?v=0K56LA821ys">[Recording]</a>
+        </b>
+      </h4>
+      <!-- <h4 style="color:darkred;text-align:center">
+        <b>
+          Recording of tutorial is now available <a href="https://www.youtube.com/watch?v=0K56LA821ys">[here].</a>
+        </b>
+      </h4> -->
+      <br>
+
+      <br />
+      <h2>Overview</h2>
+      <br />
+      <p>
+        The introduction of diffusion models has had a profound impact on video creation, democratizing a wide range of
+        applications, sparkling startups, and leading to innovative products. This tutorial offers an in-depth
+        exploration of diffusion-based video generative models, a field that stands at the forefront of creativity. We
+        expect a wide range of attendees. For students, researchers, and practitioners eager to enter and contribute to
+        this domain, we will help them get the necessary knowledge, understand the challenges, and choose a promising
+        research direction. Our tutorial is also open to video creators and enthusiasts, helping them to harness the
+        power of video diffusion models in crafting visually stunning and innovative videos.
+      </p>
+      <br id="speakers">
+      <br>
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Speakers</h2><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+
+
+          <div class="row">
+            <div class="col-xs-4" id="mike">
+              <center>
+                <a href="https://sites.google.com/view/showlab/home?authuser=0">
+                  <img class="people-pic" src="./img/people/mike.jpg" />
+                </a>
+                <div class="people-name">
+                  <a href="https://sites.google.com/view/showlab/home?authuser=0">Mike Zheng Shou</a>
+                  <h6>National U. of Singapore</h6>
+                </div>
+              </center>
+            </div>
+            <div class="col-xs-4" id="jay">
+              <center>
+                <a href="https://zhangjiewu.github.io/">
+                  <img class="people-pic" src="./img/people/jay.png" />
+                </a>
+                <div class="people-name">
+                  <a href="https://zhangjiewu.github.io/">Jay Zhangjie Wu</a>
+                  <h6>National U. of Singapore</h6>
+                </div>
+              </center>
+            </div>
+            <div class="col-xs-4" id="deepti">
+              <center>
+                <a href="https://deeptigp.github.io/">
+                  <img class="people-pic" src="./img/people/deepti.png" />
+                </a>
+                <div class="people-name">
+                  <a href="https://deeptigp.github.io/">Deepti Ghadiyaram</a>
+                  <h6>Runway ML</h6>
+                </div>
+              </center>
+            </div>
+          </div>
+
+          <br id="schedule">
+          <br>
+          <br>
+          <br>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Schedule</h2>
+              <table class="table schedule" style="border:none !important;">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Title</th>
+                    <th>Speaker</th>
+                    <th>Time (PST)</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td><b>Fundamentals</b> <br />Diffusion models, video foundation models, pre-training, etc.</td>
+                    <td><a href="https://sites.google.com/view/showlab/home?authuser=0">Mike Zheng Shou</a></td>
+                    <td>TBD</td>
+                  </tr>
+
+                  <tr>
+                    <td><b>Applications</b> <br />Fine-tuning, editing, controls, personalization, motion customization,
+                      etc.</td>
+                    <td><a href="https://zhangjiewu.github.io/">Jay Zhangjie Wu</a></td>
+                    <td>TBD</td>
+                  </tr>
+
+                  <tr>
+                    <td><b>Evaluation & Safety</b> <br />Benchmark, metrics, attack, watermark, copyright protection,
+                      etc.</td>
+                    <td><a href="https://deeptigp.github.io/">Deepti Ghadiyaram</a></td>
+                    <td>TBD</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <br id="organizers">
+          <br>
+          <br>
+          <br>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>About Us</h2>
+            </div>
+          </div>
+
+          <div class="row speaker" id="mike">
+            <div class="col-sm-3" style="text-align: center">
+              <a href="https://sites.google.com/view/showlab/home?authuser=0">
+                <img class="people-pic" src="./img/people/mike.jpg" />
+              </a>
+              <div class="people-name">
+                <a href="https://sites.google.com/view/showlab/home?authuser=0">Mike Zheng Shou</a> <a
+                  href="https://twitter.com/MikeShou1"><img
+                    src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" /></a>
+                <h6>National U. of Singapore</h6>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <p class="speaker-bio">
+                Prof. Shou is a tenure-track Assistant Professor at National University of Singapore. He was a Research
+                Scientist at Facebook AI in Bay Area. He obtained his Ph.D. degree at Columbia University in the City of
+                New York, working with Prof. Shih-Fu Chang. He was awarded Wei Family Private Foundation Fellowship. He
+                received the best paper finalist at CVPR'22, the best student paper nomination at CVPR'17. His team won
+                the 1st place in the international challenges including ActivityNet 2017, EPIC-Kitchens 2022, Ego4D 2022
+                & 2023. He regularly serves as Area Chair for top-tier artificial intelligence conferences including
+                CVPR, ECCV, ICCV, ACM MM. He is a Fellow of National Research Foundation (NRF) Singapore. He is on the
+                Forbes 30 Under 30 Asia list.
+              </p>
+            </div>
+          </div>
+
+          <div class="row speaker" id="jay">
+            <div class="col-sm-3" style="text-align: center">
+              <a href="https://zhangjiewu.github.io/">
+                <img class="people-pic" src="./img/people/jay.png" />
+              </a>
+              <div class="people-name">
+                <a href="https://zhangjiewu.github.io/">Jay Zhangjie Wu</a> <a
+                  href="https://twitter.com/jayzhangjiewu"><img
+                    src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" /></a>
+                <h6>National U. of Singapore</h6>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <p class="speaker-bio">
+                Jay is a PhD student at Show Lab, National University of Singapore, adviced by Prof. Mike Zheng Shou. He
+                was previously an intern at Tencent ARC Lab working with Yixiao Ge and Xintao Wang. He obtained his
+                Bachelor's degree in Computer Science from Shen Yuan Honors College at Beihang University. His research
+                focuses on generative AI for video content creation. His representative works include Tune-A-Video,
+                Show-1, and MotionDirector.
+              </p>
+            </div>
+          </div>
+
+          <div class="row speaker" id="deepti">
+            <div class="col-sm-3" style="text-align: center">
+              <a href="https://deeptigp.github.io/">
+                <img class="people-pic" src="./img/people/deepti.png" />
+              </a>
+              <div class="people-name">
+                <a href="https://deeptigp.github.io/">Deepti Ghadiyaram</a> <a href="https://twitter.com/deeptigp"><img
+                    src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" /></a>
+                <h6>Runway ML</h6>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <p class="speaker-bio">
+                Deepti is an incoming Assistant Professor at Boston University starting July 2024. She is currently a
+                Staff Research Scientist and Tech lead at Runway where she is working on improving the quality and
+                safety of generative models. Previously, she was a Senior Research Scientist and Tech lead at
+                Fundamental AI Research (FAIR) in Meta AI where she worked on a broad variety of topics in Computer
+                Vision, Machine Learning, and Image and Video Processing. Her research interests span several topics
+                such as building image and video understanding models, fair and inclusive computer vision models, ML
+                explainability, and perceptual image and video quality. She has served her professional community in
+                many ways, including as area chair and program committee member in major machine learning and AI
+                conferences.
+              </p>
+            </div>
+          </div>
+
+
+          <br />
+          <div class="section text-gray" id="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <!-- /.6 -->
+                <div class="col-sm-10">
+                  <p><small>&copy; 2024 <a href="https://showlab.github.io/cvpr2024-tutorial-video-diffusion-models"
+                        class="external">Mike Shou, Jay Wu, Deepti
+                        Ghadiyaram</a>.
+                      Template by <a href="https://cvpr2023-tutorial-diffusion-models.github.io/" class="external">
+                        Jiaming Song, Chenlin Meng, Arash Vahdat</a>.</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+          <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+</body>
+
+</html>
